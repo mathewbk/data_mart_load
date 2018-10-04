@@ -1,5 +1,3 @@
-%python
-
 from pyspark.sql.functions import regexp_replace
 from pyspark.sql.functions import unix_timestamp
 from pyspark.sql.functions import *
