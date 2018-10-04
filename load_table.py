@@ -5,6 +5,7 @@ from pyspark.sql.functions import unix_timestamp
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
+## read data from mount point
 read_path = "/bmathew/clickstream/000000_0"
 
 jsonSchema = StructType([
