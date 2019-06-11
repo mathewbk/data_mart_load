@@ -20,5 +20,5 @@ parsed_fields.registerTempTable("summary_fact_temp")
 
 # MAGIC %sql
 # MAGIC drop table if exists bmathew.summary_fact;
-# MAGIC create table bmathew.summary_fact using delta as (select country, count(1) as page_views from summary_fact_temp group by 1
+# MAGIC create table bmathew.summary_fact using delta as (select country, browser, count(1) as page_views from summary_fact_temp group by 1,2
 # MAGIC );
